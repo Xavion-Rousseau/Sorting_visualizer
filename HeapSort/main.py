@@ -1,3 +1,4 @@
+
 import random 
 from matplotlib import pyplot as plt, animation 
   
@@ -5,27 +6,7 @@ def swap(A, i, j):
     A[i], A[j] = A[j], A[i] 
   
 def algorithm(A,l,h):
-    if l>=h:
-        return
-    x=A[l]
-    i = l
-     
 
-    for j in range(l+1,h+1):
-        if A[j]<= x:
-            i = i+1
-            swap(A,i,j)
-        yield A
-    swap(A,l,i)
-    yield A
-
- 
-    
-    
-    yield from algorithm(A,l,i-1)
-    yield from algorithm(A,i+1,h)
-
-        
 def visualize(): 
     N = 30
     A = list(range(1, N + 1)) 
