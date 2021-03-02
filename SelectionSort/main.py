@@ -34,7 +34,7 @@ def visualize():
     generator = algorithm(A) 
       
     fig, ax = plt.subplots() 
-    ax.set_title("Bubble Sort O(n\N{SUPERSCRIPT TWO})") 
+    ax.set_title("SelectionSort O(n\N{SUPERSCRIPT TWO})") 
     bar_sub = ax.bar(range(len(A)), A, align="edge") 
       
     ax.set_xlim(0, N) 
